@@ -1,0 +1,2 @@
+this is my second method of file handling operations
+second line
