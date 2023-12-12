@@ -1,6 +1,6 @@
 ## Decision Tree Regressor
 
-Now for the regression problem statement, somewhats steps are similar to that of the decision tree classifier with numeric values.
+Now for the regression problem statement, somewhat steps are similar to that of the decision tree classifier with numeric values.
 
 **Steps to perform decision tree regressor**
 
@@ -84,4 +84,19 @@ exa:- if min_samples_split = 5 and if we have 3 samples in any of the node then 
 
 
 
-sdfbvdfb
+### **Pre-pruning & Post-pruning in Decision Tree**
+This concept is used to reduce the overfitting problem of decision tree.
+The word pruning means cutting or deleting.
+
+1) Pre-Pruning :- Before creating a decision tree we limit its splits, its depth and this is called as Pre-pruning. While creating a decision tree itself we decide to set values of parameters like Max_depth or Min_samples_leaf or Min_Samples_Split or Max_features.
+
+2) Post-Pruning :- In this we first create a complete decision tree, and then limit the decision tree.
+and for limiting the decision tree, we have a parameter called *"ccp_alpha"* (Cost-Complexity Pruning).
+We use this ccp_alpha value as a threshold value w.r.t Gini Impurity or Entropy.
+
+Lets suppose we take ccp_alpha = 0.4
+First we will create a decision tree till its depth so already Entropy or Gini Impurity is calculated at each node. So we will just check that value is less or greater than our threshold value. So till whichever depth our threshold is greater we will take untill that level only.
+
+So the Gini Impurity or Entropy increase as we go down in the tree.
+If ccp_alpha will very high, the decision tree will be almost till depth
+
