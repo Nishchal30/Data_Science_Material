@@ -77,6 +77,10 @@ As given in the above image, we will select the K-value where the WCSS will not 
 2) Silhoute Score
 
 1) Dunn Indexing: max( d(xi, xj)) / max( d(yi, yj))
+or this can also be written as 
+= max (intercluster distance) / max (intracluster distance)
+
+range of dunn indexing is [0, inf]
 
 2) Silhoute Score: bi - ai / max(bi-ai) 
 The range of this score is [-1 to 1]
@@ -86,4 +90,17 @@ bi = Intercluster distance
 
 The more +ve value towards 1, the clusters are good in accuracy.
 
+
+## K-Means ++ (Updated version of K-Means)
+
+In k-Means we assign centroids randomly in the data set. But that can cause issues in creating clusters.
+As cluster will not properly bcoz of random initialisation of centroids.
+
+But this issue is resolved in K-Means ++
+
+There is one formula in K-Means ++ to choose the 2nd centroid.
+
+2nd centroid = max(dist(first centroid , xi))
+
+Select the point which is farthest away from the first centroid so that 2nd centroid will not be selected near to first centroid itself.
 
