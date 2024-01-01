@@ -40,6 +40,11 @@ loss = (y - y^)
 
 Now to reduce this loss value we will perform the backward propogation and update all the wights from backward side.
 
+
+## Backward propogation & Weight updation formula
+
+
+
 ## Activation Functions:
 
 1) Sigmoid Activation Function:
