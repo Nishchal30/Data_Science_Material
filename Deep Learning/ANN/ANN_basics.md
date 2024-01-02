@@ -26,7 +26,7 @@ Again in this layer also we will perform the same above two steps:
 We will assign again some weight and add bias to this layer neurons.
 The input to this layer neuron is output of previous layer neurons.
 
--step2:
+- step2:
 Apply activation function on top of the above z value from step1.
 Here we will apply same sigmoid activation function as we have to transform z value to 0 - 1.
 
@@ -80,4 +80,31 @@ Hence this becomes a chain rule,
 del (loss) / del (w4 old) = del (loss)/del(O2) * del(O2)/ del (w4 old)
 
 
+## Vanishing Gradient Problem 
+
+As in the hidden layer neurons, we use activation function on top of Z. 
+And we also have seen that, we can use sigmoid function as a activation function.
+
+The value ranges for sigmoid activation function
+
+0 < sigmoid > 1
+
+But in the backpropogation we find out derivatives, so the derivative of sigmoid ranges from
+
+0 < sigmoid derivative > 0.25
+
+![Alt text](image-3.png)
+
+In the chain rule the derivative of sigmoid activation function ranges from 0 - 0.25
+
+Now anything multiplyed with [0 - 0.25] such a small number we will get smaller number only.
+
+So the w(new) is approx equal to w(old) not any significant difference will be there.
+
+Hence the convergence to gloabl minima would not be possible or new weights will not get updated that much.
+
+This problem is called as Vanishing Gradient Problem
+hence in deep layer neural network, the sigmoid activation function will not work in hidden layers.
+
+To resolve this issue we use other activation functions like Tanh, ReLu, Leaky ReLu etc.
 
