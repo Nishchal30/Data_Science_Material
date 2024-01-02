@@ -43,12 +43,41 @@ Now to reduce this loss value we will perform the backward propogation and updat
 
 ## Backward propogation & Weight updation formula
 
+Weight updation formula is given as,
+
+W(new) = W(old) - learning rate * del(loss)/del(W(old))
+
+![Alt text](image-2.png)
+
+The same above formula also works for the bias as we update bias also.
+
+With the help of the above formula we will update weights from backward i.e. the last weight & bias for last neuron will update first and the weights & bias for input layer will update in last.
+
+This is called as backpropogation.
+
+This weight updation is done by the **Optimizers** in Neural networks.
 
 
-## Activation Functions:
+## Chain Rule of Derivative
 
-1) Sigmoid Activation Function:
+![Alt text](image.png)
 
-The main aim of sigmoid activation function is to convert any value of z to 0 to 1.
+As we use two layer neural network, let's suppose the weight for last neuron of output layer is w4
 
-![Alt text](image-1.png)
+w4 new = w4 old - learning rate * del (loss) / del (w4 old)
+
+del (loss) / del (w4 old) this term is slope of the point.
+
+Now del (loss) / del (w4 old) this directly can't get calculated as we cannot find derivative of loss with respect to w4.
+
+Hence we need to use Chain rule here,
+
+del (loss) / del (w4 old) = del (loss)/del(O2) * del(O2)/ del (w4 old)
+
+Here O2 is output of output layer neuron, as loss is dependent on this output. This O2 output of output layer neuron is dependent on the weight assigned to that neuron which is w4.
+
+Hence this becomes a chain rule,
+del (loss) / del (w4 old) = del (loss)/del(O2) * del(O2)/ del (w4 old)
+
+
+
