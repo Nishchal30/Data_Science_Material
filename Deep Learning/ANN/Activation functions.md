@@ -1,5 +1,9 @@
 ## Activation Functions
 
+A neural network without an activation function is essentially just a linear regression model.Thus we use a non linear transformation to the inputs of the neuron and this non-linearity in the network is introduced by an activation function.
+
+### Activation functions for classification problems
+
 1) Sigmoid:
 
 ![Alt text](image-3.png)
@@ -124,3 +128,35 @@ Now whichever class has the highest probability that class will be the output fo
 - In hidden layers we can use Relu and its variants.
 - In output layer and if we have binary classification we can use sigmoid activation function.
 - In output layer and if we have multiclass classification we can use softmax activation function.
+
+
+### Activation functions for regression problems
+
+1) Binary step function:
+
+This is the threshold based activation function, when the z value from weights multiplied to inputs added with bias is greater than a set threshold value then that neuron will be considered as active else it is considered as deactive.
+
+The function is given as,
+
+f(x) = 1 if x >= 0
+f(x) = 0 if x < 0
+
+
+The derivative of this function is given as,
+
+f'(x) = 0, for all x
+
+hence we cannot consider this activation function while back propogating the network
+
+2) Linear Function:
+
+The linear function is given as,
+
+f(x)=ax
+
+The variable ‘a’ in this case can be any constant value.
+
+The derivative of this function is,
+
+f'(x) = a
+
