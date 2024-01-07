@@ -2,7 +2,7 @@
 
 optimizers are algorithms that adjust the model’s parameters during training to minimize a loss function. They enable neural networks to learn from data by iteratively updating weights and biases.
 
-1) Gradient Descent Optimizer:
+## 1) Gradient Descent Optimizer:
 
 The optimizer is used to update the weights and bias to back propogate in the neural network.
 We use the below formula to update the weights
@@ -34,7 +34,7 @@ Iterations:
 1) Require huge RAM & GPU (resource extensive)
 
 
-2) Stochastic Gradient Descent Optimizer (SGD):
+## 2) Stochastic Gradient Descent Optimizer (SGD):
 
 Let's suppose we have 1000 data points and in SGD, we will pass only 1 data point so that for 1000 data point in 1 epoch we will have 1000 iterations of forward and backward propogation
 
@@ -52,7 +52,7 @@ So for this time complexity will be high
 ![Alt text](image-20.png)
 
 
-3) Mini batch Stochastic Gradient Descent Optimizer (Mini batch SGD):
+## 3) Mini batch Stochastic Gradient Descent Optimizer (Mini batch SGD):
 
 - In this along with epochs and iterations we also include batches.
 - The batch size means in 1 iterations how many datapoints we should pass.
@@ -70,7 +70,7 @@ So for this time complexity will be high
 1) Noise still present
 
 
-4) SGD with momentum:
+## 4) SGD with momentum:
 
 We use the below formula to update weights
 
@@ -95,7 +95,7 @@ This technique will smoothen the curve for joining the points where noise comes.
 
 
 
-5) Adagrad (Adaptive gradient descent):
+## 5) Adagrad (Adaptive gradient descent):
 
 In the weight updation formula, we have seen that the learning rate is fixed for all the time.
 
@@ -117,7 +117,7 @@ In deep neural netwrok new learning rate can be much smaller or close to 0, henc
 1) Possibility to become new learning rate a small value or close to 0
 
 
-6) Adadelta & RMS Prop:
+## 6) Adadelta & RMS Prop:
 
 Now to overcome the new learning rate value become 0 problem, we use exponential weighted average method here also.
 
@@ -130,7 +130,7 @@ where Sdwt is the formula that we apply exponential moving average on sum (del l
 So in Adadelta, new learning rate we are apply exponential weighted average.
 
 
-7) Adam optimizer:
+## 7) Adam optimizer:
 
 Adam is the combination of two optimizers i.e. 
 
