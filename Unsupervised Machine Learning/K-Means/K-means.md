@@ -80,7 +80,7 @@ As given in the above image, we will select the K-value where the WCSS will not 
 or this can also be written as 
 = max (intercluster distance) / max (intracluster distance)
 
-range of dunn indexing is [0, inf]
+range of dunn indexing is [0, inf   ]
 
 2) Silhoute Score: bi - ai / max(bi-ai) 
 The range of this score is [-1 to 1]
