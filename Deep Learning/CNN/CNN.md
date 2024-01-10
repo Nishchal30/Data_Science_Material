@@ -13,7 +13,7 @@ In CNN, every image is a combination of 3 color channels.
 
 ![Alt text](image.png)
 
-now in every colorful image in background there are pixels. The pixel value ranges from (0, 256)
+now in every colorful image in background there are pixels. The pixel value ranges from (0, 255) for every color Red, Green and Blue
 
 In gray scale there is only one channel with (0, 255) pixles.
 That pixel value for white becomes 255 and for black the pixel value is 0
@@ -49,6 +49,107 @@ Now here in the above image the input matrix is 6*6, filter is 3*3 but output ma
 
 The formula for output matrix is,
 
-output = no of input - filter + 1
-output = 6 - 3 + 1
-output = 4
+- output = no of input - filter + 1
+- output = 6 - 3 + 1
+- output = 4
+
+- step3: Now again apply minmax scaler to re-normalize the matrix, the highest value becomes 255 and lowest becomes 0.
+
+So in our case 30 becomes 255 and 0 becomes 0
+
+So we are able to get the vertical edge of the original image from the output matrix.
+
+**So the filter which we have applied here is called as vertical edge filter and used to detect vertical edges from the image.**
+
+As we learn to apply and update weights in ANN, we need to learn and update this kind of filers in CNN to detect edges from the image
+
+![Alt text](image-3.png)
+
+Now if we apply the second filter, it will be used to detect the horizontal edges from the image.
+
+We have seen above that we have input matrix is 6*6 we are applying filter of 3*3 but we are getting output matrix as 4*4. So surely we are loosing some of the information here.
+
+So to prevent this we use the next technique which is padding.
+
+
+## Padding:
+
+To add padding means to add boundary to the input matrix. Now there is formula to decide how much padding we need to add.
+
+- output = n - f + 2p + 1
+
+Now we know the final output should be 6 because input matrix is 6
+
+- 6 = 6 - 3 + 2p + 1
+- 6 = 4 + 2p
+- p = 2/2
+- p = 1
+
+Now one layer of padding we will add to the input matrix so that after applying 3*3 filter the output matrix would be 6*6 matrix.
+
+Now there are two types of padding
+1) Zero padding: add zero to all the padding cells.
+2) Neighbour value padding: Add the neighbour value to the padding cells
+
+After applying padding the new input matrix becomes 8*8
+
+![Alt text](image-4.png)
+
+**After this convolution operation we will apply Relu activation function to the matrix**
+
+## Why do we use activation function in CNN
+
+As we have seen in ANN, to learn the neural network better from the data, we need to minimise the loss and for that we need to update weights.
+
+In back propogation to update filters in CNN, we need to use activation function.
+
+We have considered black and white image so the input matrix becomes 6*6*1 as only one black & white channel is there.
+But if we have coloured image then it would have been 6*6*3 as 3 RGB colour channels will be applied to input matrix.
+
+Also in the filters, it would have been 3*3*3 for coloured images.
+
+
+## Max-Pooling:
+
+- Max pooling is performed on the convolutional layers of a CNN. 
+- It involves sliding a window (often called a filter or kernel) across the input data, similar to the convolution step, but instead of performing a matrix multiplication, max pooling takes the maximum value within the window. 
+- This maximum value becomes a single pixel in the new, pooled output. 
+- The window is then slide across the input data by a stride of a certain number of pixels, and the process is repeated until the entire input image has been processed.
+- Typically, the size of the pooling window is 2x2, and the stride with which the window is moved is also 2 pixels. 
+- This setup reduces the size of the input by half, both in height and width, effectively reducing the total number of pixels by 75%.
+
+## Min-Pooling:
+
+This is exactly opposite to max-pooling, min-pooling will consider only minimum values from the input matix.
+
+## Mean-Pooling:
+
+This will take average of the values from the input matrix
+
+
+![Alt text](image-5.png)
+
+In the above image, first we have applied a convolution layer on the image.
+The image is of 28*28*1 for black and white
+
+Then we apply 5*5 filter on top of this image the output matrix will become 24*24*n1 as we will apply n no of filters to the matrix
+
+output = 28 - 5 + 1
+output = 24
+
+Then we will apply a max-pooling of 2*2 so the output matrix will become 12*12*n1
+
+Then again we will apply convolution layer on top of this output and again we will apply max-pooling layer.
+
+
+## Flattening:
+
+The flatten layer lies between the CNN and the ANN, and its job is to convert the output of the CNN into an input that the ANN can process, as we can see in the above diagram.
+
+![Alt text](image-6.png)
+
+As in the above image all the pixel values will get arranged in a single matrix, and then this matrix will get pass to the ANN
+
+The final image will looks as below when we apply a CNN + ANN for a image classification problem
+
+![Alt text](image-7.png)
