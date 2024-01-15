@@ -21,9 +21,10 @@ So with the help of changing above layers or parameters we came to know the belo
 
 ## Lenet - 5
 
-It's a classifiaction architecture for recognizing the handwritten and machine-printed characters. There is input limit for this architecture
+It's a classifiaction architecture for recognizing the handwritten and machine-printed characters. There is input limit for this architecture. It can take input <= 32. 
 
 input size = (32*32*1) only grayscale images
+**Also in the whole architecture they have used TanH activation function only.**
 
 - In first convolution layer they took 6 filters of size 5*5.
 
@@ -51,3 +52,46 @@ The final architecture diagram will looks like below:
 ## Summarization
 
 ![Alt text](image-13.png)
+
+
+## Alexnet
+
+![Alt text](image-14.png)
+
+## Visual Geomtery Group (VGG)
+
+## VGG-16
+
+![Alt text](image-15.png)
+
+In VGG - 16
+
+For all convolutional layers:
+- Filter size = 3*3
+- Stride = 1
+- Padding = same wherever padding is used
+
+For all maxpooling layers:
+- pooling size = 2*2
+- Stride = 2
+
+Th summary of the VGG-16 architecture is given in below image
+
+![Alt text](image-16.png)
+
+**The last layer of ANN will contain 1000 neurons as output layer not 4096**
+
+## VGG - 19
+
+![Alt text](image-17.png)
+
+**The only difference in VGG-16 & VGG-19 architectures, VGG-19 has more convolutional layers included**.
+
+
+## Why do we use pre-trained model / Transfer Learning in CNN?
+
+- CNN needs much more data to train, so we need large amount of data which is not possible to train any new model.
+- Training time will be much higher as the models are much complex to train.
+
+We use already pre-trained model with the pre-trained weights on our custom data, so we will get better accuracy.
+Only we change the ANN configurations, we will keep CNN parts as it is from the pre-trained model
