@@ -95,3 +95,10 @@ Th summary of the VGG-16 architecture is given in below image
 
 We use already pre-trained model with the pre-trained weights on our custom data, so we will get better accuracy.
 Only we change the ANN configurations, we will keep CNN parts as it is from the pre-trained model
+
+
+## Why 3*3 filter works more better than 5*5?
+
+As in 3*3 we use only 9 parameters and in 5*5 we use 25 parameters so more number of parameters means more computation required.
+
+Also if the output of 1st Conv layer with using 5*5 filter will be more than 2 Conv layers of 3*3 filter. So in 2 Conv layer we will be able to extract more features than in only 1 layer.

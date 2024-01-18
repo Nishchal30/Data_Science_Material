@@ -71,6 +71,8 @@ We have seen above that we have input matrix is 6*6 we are applying filter of 3*
 
 So to prevent this we use the next technique which is padding.
 
+**We never use even size filters as in 2*2 or 4*4 because it has the symmetry issues, we only use odd size filters**
+
 
 ## Padding:
 
