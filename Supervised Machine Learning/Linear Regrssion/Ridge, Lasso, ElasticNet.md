@@ -10,6 +10,8 @@ In reidge regression, we basically add some extra parameters in the cost functio
 ### **Cost function**
 So the cost function of ridge regression is given by,
 
+![Alt text](image.png)
+
 **Cost function = 1/m sum (h(B(xi)) - yi)^2 + lambda sum(slope)^2**
 
 Now lambda(slope) this extra term is added in the linear regression cost function.
@@ -38,6 +40,9 @@ If the B value becomes zero then that independent feature will get discarded.
 
 
 ## Lasso Regression (L1 Regularization)
+
+![Alt text](image-1.png)
+
 As ridge regression doesn't support B to be zero for selecting important features,
 so lasso regression is useful there for feature selection.
 
