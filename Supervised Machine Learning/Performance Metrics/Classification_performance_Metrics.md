@@ -11,15 +11,7 @@ There are 5 methods in classification performance metrics
 **1) Confusion Matrix :-** 
 we have 2 x 2 matrix as given below,
 
-  | 1      |     0      Actual value (y)
-----------------------
-1 | 1      |     1
-----------------------
-0 | 2      |     1
-----------------------
-
-Predicted
-Value (y^)
+![Alt text](image-5.png)
 
 and we have the predicted and actual y values as:
 
