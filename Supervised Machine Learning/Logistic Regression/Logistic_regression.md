@@ -43,7 +43,7 @@ So for this the logistic regression will flatten a best fit line on Y-value 0 & 
 
 Sigmoid function = 1 / 1 + e^-z   where z = B0 + B1x
 
-**The output of sigmoid function will always be 0 & 1.**
+**The output of sigmoid function will always be 0 to 1.**
 
 ### **cost function of logistic regression**
 
