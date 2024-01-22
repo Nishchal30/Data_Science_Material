@@ -147,19 +147,27 @@ The formula for information gain is given as,
 
 Where,
 Entropy(S) = Entropy of the root feature
+
 Sv = The total samples for the each split after root node i.e child node
+
 S = Total no of samples for the root feature
+
 Entropy(Sv) = Entropy for each split node
 
 IG(outlook) = Entropy(outlook) - sum [(S(sunny)/S * Entropy(sunny) + S(rainy)/S * Entropy(rainy) + S(overcast)/S * Entropy(overcast))]
 
 Entropy(outlook) = -9/13 * log2(9/13) - 4/13 * log2(4/13)
+
 Entropy(outlook) = 0.6923 * (-0.54) - 0.3076 * (-1.7)
+
 Entropy(outlook) = 0.3738 + 0.52292
+
 Entropy(outlook) = 0.8967
 
 IG(outlook) = 0.8967 - sum(5/14 * 0.972 + 4/14 * 0.312 + 4/14 * 0)
+
 IG(outlook) = 0.8967 - (0.3471 + 0.0891 + 0)
+
 IG(outlook) = 0.4605
 
 **We will select the feature for which the information gain is maximum so that it will provide the maximum information**
