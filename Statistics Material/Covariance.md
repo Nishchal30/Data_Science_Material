@@ -29,7 +29,6 @@ Now for our above example, xbar = 15 & ybar = 51
 Based on this Cov(x, y) = 24 i.e +ve value
 
 Conclusions:
-
 **1) The conclusion on +ve cov value is if x increases y also increases & if x decreases y also decreases.**
 
 **2) The conclusion on -ve cov value is if x increases y decreases & if x decreases y increases.**
@@ -61,7 +60,7 @@ Conclusions:
 
 Formula:
 
-![Alt text](image-4.png)
+rs = Cov (R(x), R(y))/{S.D (R(x)) * S.D (R(y))}
 
 R(x) & R(y) is just ranking of observations, simply based on x & y values ranks the obersvations as given below.
 
