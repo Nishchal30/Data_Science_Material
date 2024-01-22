@@ -194,7 +194,7 @@ This will be our dataset after sorting ascendingly.
 
 Now as we do it in categorical data, just by picking up any category of a column and based on that category we can split how many yes are there and how many no are there, but in case of numeric columns we cannot do like this.
 
-**2) So for this we have to find out the average of adjust values.**
+**2) So for this we have to find out the average of adjusent values.**
 - like we have to find out average of 155 & 180 i.e 167.5
 - average of 180 & 190 i.e 185 and so on.
 
