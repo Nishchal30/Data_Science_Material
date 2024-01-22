@@ -90,7 +90,7 @@ Significance value = 1-0.95 = 0.05
 Now lower & upper fence = 0.05/2 = 0.025
 
 - Lower CI = point estimate - margin of error
-- Lower CI = z alpha/2 (z Significance value/2)  * sigma/root(n)
+- Lower CI = xbar - z alpha/2 (z Significance value/2)  * sigma/root(n)
 - Lower CI = 520 - z 0.05/2 * 100/root(25)
 - Lower CI = 520 - z0.025 * 20
 - Lower CI = 520 - (z table value of z 0.025) *20 --- (z table value of z 0.025 will be calculated as total area till 0.025 = 1-0.025 = 0.975 and z value of 0.975 is 1.96. 2nd method is directly find where 0.025 is there in ztable that value will be for -0.025 but as curve is symmetrical that same value will be for +0.025)
