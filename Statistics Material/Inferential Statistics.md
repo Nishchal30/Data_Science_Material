@@ -123,10 +123,10 @@ degree of freedom = n-1 = 25-1 = 24
 ## One tailed / two tailed test
 Q. A college in town A has placement rate of 85%. A new college was recently opened & it was found that sample of 150 students had placed with placement rate of 88% with standerd deviation 4%. Does this college has a different placement rate with 95% CI?
 
---> The above que is for two tailed test, as there mentioned *different placement rate*, it means it can either be less than 85% or greater than so for this we have to focus on both the tails of the curve.
+- The above que is for two tailed test, as there mentioned *different placement rate*, it means it can either be less than 85% or greater than so for this we have to focus on both the tails of the curve.
 
---> If the que has something like greater than 85% then we will have to focus on right side of tail means one tailed test.
---> If the que has something like less than 85% then we will have to focus on left side of tail means one tailed test.
+- If the que has something like greater than 85% then we will have to focus on right side of tail means one tailed test.
+- If the que has something like less than 85% then we will have to focus on left side of tail means one tailed test.
 
 ### **P-value**
 
