@@ -48,7 +48,7 @@ Formula:-
 Conclusions:
 **1) More the value of Pearson Correlation Coefficient towards +1, the more variables are positively correlated.**
 
-**2) More the value of Pearson Correlation Coefficient towards 11, the more variables are negatively correlated.**
+**2) More the value of Pearson Correlation Coefficient towards -1, the more variables are negatively correlated.**
 
 
 ### **Disadvantage**:
