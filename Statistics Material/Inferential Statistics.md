@@ -147,6 +147,7 @@ b) At 95% CI, are there enough evidences to support machine is working properly?
 --->
 
 **Null Hypothesis: An average amount of medicine filled is 80 ml & machine is working fine.**
+
 **Alternative hypothesis: An average amount of medicine filled is not 80 ml & machine is not working fine.**
 
 Given:  u = 80 , n = 40, xbar = 78, s = 2.5, CI = 95%
