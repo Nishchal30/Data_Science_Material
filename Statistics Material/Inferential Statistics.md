@@ -1,6 +1,6 @@
 ## Inferential Statistics
 
-On the basis of sample data from the population, we make some assumptions or conclusions for population. To validate or to prove our made assumptions or conclusions for population are correct we Hypothesis testing.
+On the basis of sample data from the population, we make some assumptions or conclusions for population. To validate or to prove our made assumptions or conclusions for population are correct we perform Hypothesis testing.
 
 **Steps to perform Hypothesis testing:**
 **step 1) Null Hypothesis:-** The default statement will be considered as null hypothesis.
