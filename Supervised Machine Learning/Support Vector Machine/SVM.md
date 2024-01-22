@@ -26,7 +26,7 @@ where w^T is the transpose matrix of [w1 w2] which is given as:
 [w1
  w2]
 
-Let's assume te line is passing through origin then b = 0 and the equation becomes,
+Let's assume the line is passing through origin then b = 0 and the equation becomes,
 **w^Tx = 0**
 
 IF we have to find out the distance of the point p1 from the plane then it is given by,
