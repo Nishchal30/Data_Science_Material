@@ -67,11 +67,7 @@ R(x) & R(y) is just ranking of observations, simply based on x & y values ranks 
 For calulating this, we uses Rank of variables.
 exa:
 
- x    |    y    |  R(x)   | R(y)
-10    |    4    |    4    |  1
-8     |    6    |    3    |  2
-7     |    8    |    2    |  3
-6     |    10   |    1    |  4
+![Alt text](image-4.png)
 
 **Catch: if there are same observations the same rank will be given**
 
