@@ -53,22 +53,33 @@ As the categories in the features increases, our formula also increases as it ad
 Now if we take the above example of outlook feature and in the outlook if we take sunny category, and try to find the entropy for sunny category 
 
 Entropy (sunny) = -p(y) * log 2(y) - p(n) * log 2(n)
+
 Entropy (sunny) = -2/5 * (log 2(2/5) - 3/5 * log2(3/5)
+
 Entropy (sunny) =  -2/5 *(log2(2) - log2(5)) - 3/5 * (log2(3) - log2(5))
+
 Entropy (sunny) = -2/5 * (-1.32) -3/5 * (-0.74)
+
 Entropy (sunny) = 0.528 + 0.444
+
 Entropy (sunny) = 0.972
 
 Similarly, we can calculate the entropy for other categories of outlook feature i.e. rainy & overcast.
 
 Entropy (rainy) = -p(y) * log 2(y) - p(n) * log 2(n)
+
 Entropy (rainy) = -3/4 * (log2(3/4)) - 1/4 * (log2(1/4))
+
 Entropy (rainy) = -3/4 * (-0.416) -1/4 * (0)
+
 Entropy (rainy) = 0.312 + 0
+
 Entropy (rainy) = 0.312
 
 Entropy (overcast) = -4/4 * (log2(4/4)) - 0/4 * (log2(0/4))
+
 Entropy (overcast) = -4/4 * (0) - 0
+
 Entropy (overcast) = 0
 
 Hence for the perfect pure split (either of any +ve or -ve should be 0) we get entropy = 0, and for perfect impure split (both +ve & -ve class are same) we get entropy = 1
