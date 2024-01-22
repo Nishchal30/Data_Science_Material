@@ -43,7 +43,7 @@ We are able to restrict the covariance value just by dividing cov (x, y) with st
 
 Formula:- 
 
-row (x,y) = {cov(x, y)/(S.D x * S.D y)}
+![Alt text](image-3.png)
 
 Conclusions:
 **1) More the value of Pearson Correlation Coefficient towards +1, the more variables are positively correlated.**
@@ -60,7 +60,7 @@ Conclusions:
 
 Formula:
 
-rs = Cov (R(x), R(y))/{S.D (R(x)) * S.D (R(y))}
+![Alt text](image-4.png)
 
 R(x) & R(y) is just ranking of observations, simply based on x & y values ranks the obersvations as given below.
 
