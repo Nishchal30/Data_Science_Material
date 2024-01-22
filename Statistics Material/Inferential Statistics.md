@@ -76,7 +76,10 @@ Hence xbar is the point estimate bcoz we are trying to estimat parameter u value
 Lower CI = point estimate - margin of error
 Upper CI = point estimate + margin of error
 
-Formula for margin of error = z alpha/2 (z Significance value/2)  * sigma/root(n)
+Formula for margin of error is given as,
+
+![Uploading image.png…]()
+
 
 **Practcal problem**
 
