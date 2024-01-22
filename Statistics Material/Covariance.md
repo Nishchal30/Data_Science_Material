@@ -14,7 +14,7 @@ And vice-versa, as age is decreasing weight is also decreasing.
 
 Formula:- 
 
-Cov(x, y) = sum {(xi - xbar) * (yi - ybar)}/n-1
+![Alt text](image-2.png)
 
 Now this formula is similar to the sample variance formula sum (xi - xbar)^2/n-1
 
