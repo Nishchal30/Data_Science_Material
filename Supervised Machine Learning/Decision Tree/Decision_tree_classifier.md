@@ -95,16 +95,23 @@ Now we will find the gini impurity for same above 3 categories of outlook featur
 3) Overcast = 4Y & 0N
 
 G.I. (sunny) = 1 - sum(pi)^2
+
 G.I. (sunny) = 1 - [(2/5)^2 + (3/5)^2]
+
 G.I. (sunny) = 1 - (0.16 + 0.36)
+
 G.I. (sunny) = 0.48
 
 G.I. (rainy) =  1 - [(3/4)^2 + (1/4)^2]
+
 G.I. (rainy) = 1 - (0.5625 + 0.0625)
+
 G.I. (rainy) = 0.375
 
 G.I. (overcast) = 1 - [(4/4)^2 + (0/4)^2]
+
 G.I. (overcast) = 1 - (1+0)
+
 G.I. (overcast) = 0
 
 The comparison graph for entropy vs gini impurity for the probability values of +ve and -ve categories of the feature is given as,
