@@ -92,7 +92,7 @@ Recall  = TP / (TP + FN)
 
 **Out of all the predicted values how many are correctly predicted**
 
-**Whenever we have to reduce FN then we can use Precision**
+**Whenever we have to reduce FN then we can use Recall**
 
 
 **5) F-Beta Score:-**
