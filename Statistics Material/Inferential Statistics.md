@@ -90,7 +90,7 @@ Significance value = 1-0.95 = 0.05
 Now lower & upper fence = 0.05/2 = 0.025
 
 - Lower CI = point estimate - margin of error
-- Lower CI = z alpha/2 (z Significance value/2)  * sigma/root(n)
+- Lower CI = xbar - z alpha/2 (z Significance value/2)  * sigma/root(n)
 - Lower CI = 520 - z 0.05/2 * 100/root(25)
 - Lower CI = 520 - z0.025 * 20
 - Lower CI = 520 - (z table value of z 0.025) *20 --- (z table value of z 0.025 will be calculated as total area till 0.025 = 1-0.025 = 0.975 and z value of 0.975 is 1.96. 2nd method is directly find where 0.025 is there in ztable that value will be for -0.025 but as curve is symmetrical that same value will be for +0.025)
@@ -123,10 +123,10 @@ degree of freedom = n-1 = 25-1 = 24
 ## One tailed / two tailed test
 Q. A college in town A has placement rate of 85%. A new college was recently opened & it was found that sample of 150 students had placed with placement rate of 88% with standerd deviation 4%. Does this college has a different placement rate with 95% CI?
 
---> The above que is for two tailed test, as there mentioned *different placement rate*, it means it can either be less than 85% or greater than so for this we have to focus on both the tails of the curve.
+- The above que is for two tailed test, as there mentioned *different placement rate*, it means it can either be less than 85% or greater than so for this we have to focus on both the tails of the curve.
 
---> If the que has something like greater than 85% then we will have to focus on right side of tail means one tailed test.
---> If the que has something like less than 85% then we will have to focus on left side of tail means one tailed test.
+- If the que has something like greater than 85% then we will have to focus on right side of tail means one tailed test.
+- If the que has something like less than 85% then we will have to focus on left side of tail means one tailed test.
 
 ### **P-value**
 
@@ -147,6 +147,7 @@ b) At 95% CI, are there enough evidences to support machine is working properly?
 --->
 
 **Null Hypothesis: An average amount of medicine filled is 80 ml & machine is working fine.**
+
 **Alternative hypothesis: An average amount of medicine filled is not 80 ml & machine is not working fine.**
 
 Given:  u = 80 , n = 40, xbar = 78, s = 2.5, CI = 95%
