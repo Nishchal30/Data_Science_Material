@@ -128,7 +128,7 @@ Then we have to find out the **Information gain for that feature**
 **Inside the decision tree classifier we have two types of algorithms,** 
 
 1) ID3 :- Iterative Decotomiser
-2) CART :- Classification & Regres  sion Tree
+2) CART :- Classification & Regression Tree
 
 1) ID3 :- In general if we use ID3 algorithm, then we use **entropy and Information gain** in this algorithm to select the root node of the tree
 
