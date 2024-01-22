@@ -29,6 +29,7 @@ Now for our above example, xbar = 15 & ybar = 51
 Based on this Cov(x, y) = 24 i.e +ve value
 
 Conclusions:
+
 **1) The conclusion on +ve cov value is if x increases y also increases & if x decreases y also decreases.**
 
 **2) The conclusion on -ve cov value is if x increases y decreases & if x decreases y increases.**
