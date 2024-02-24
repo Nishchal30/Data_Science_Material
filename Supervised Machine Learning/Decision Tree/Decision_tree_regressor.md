@@ -48,22 +48,33 @@ MSE is basically the error between the actual and predicted values, also called 
 MSE = 1/n sum (y - y^)^2
 
 MSE (Height) = 1/5 * (50-72)^2 + (65-72)^2 + (85-72)^2 + (70-72)^2 + (90-72)^2
+
 MSE (Height) = 1/5 * 484 + 49 + 169 + 4 + 324
+
 MSE (Height) = 1/5 * (1030)
+
 MSE (Height) = 206
+
+MSE (Height <= 162.5) = 1/1*(50-50)^2
 
 MSE (Height <= 162.5) = 0
 
 MSE (Height > 162.5) = 1/4 * sum (65-77.5)^2 + (85-77.5)^2 + (70-77.5)^2 + (90-77.5)^2
+
 MSE (Height > 162.5) = 1/4 * (156.25 + 56.25 + 56.25 + 156.25)
+
 MSE (Height > 162.5) = 1/4 * (425)
+
 MSE (Height > 162.5) = 106.5
 
 3) Reduction in Variance:- 
 
 Reduction in Variance = Var(root) - sum (mod(Sv)/mod(S) * Var(child))
+
 Reduction in Variance = 206 - sum(1/5*0 + 4/5*106.5)
+
 Reduction in Variance = 206 - (85.2)
+
 Reduction in Variance = 120.8
 
 So this is the Reduction in variance for the first value of adjusent average.
