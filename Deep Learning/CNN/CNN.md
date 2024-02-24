@@ -118,7 +118,7 @@ Also in the filters, it would have been 3*3*3 for coloured images.
 - This maximum value becomes a single pixel in the new, pooled output. 
 - The window is then slide across the input data by a stride of a certain number of pixels, and the process is repeated until the entire input image has been processed.
 - Typically, the size of the pooling window is 2x2, and the stride with which the window is moved is also 2 pixels. 
-- This setup reduces the size of the input by half, both in height and width, effectively reducing the total number of pixels by 75%.
+- This setup reduces the size of the input by half, both in height and width, effectively reducing the total number of pixels by 75%. (information loss is 75% and dimension reduction is 50%)
 
 ## Min-Pooling:
 
