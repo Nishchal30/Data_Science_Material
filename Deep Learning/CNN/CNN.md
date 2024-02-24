@@ -155,3 +155,21 @@ As in the above image all the pixel values will get arranged in a single matrix,
 The final image will looks as below when we apply a CNN + ANN for a image classification problem
 
 ![Alt text](image-7.png)
+
+
+## Receptive Field:
+
+**Deconvolution**:
+When we do the reverse of convolution process like starting from input image pixels then apply convolution layer with some filter. So if we do reverse of this like starting from flattened layer 1x1 pixel then add filters and bring previous layer of flattened layer. Then this operation is called as DeConvolution as shown in below image.
+
+![alt text](image-18.png)
+
+The receptive field, is basically the region in the input space that a particular CNN’s feature is looking at.
+
+exa:- 
+
+![alt text](image-19.png)
+
+- The receptive field of the first convolution layer is that the green box in 2nd layer is looking at the 3x3 pixels from the input image.
+- Similarly, the yellow box in the 2nd convolution layer is looking at the 3x3 pixels from the 1st convolution layer.
+- In simple terms the receptive field is the how much imformation that kernel can see? So we always look for global receptive field i.e. from 1x1 we should be able to see the entire image pixels so this type is called as Receptive Field.
