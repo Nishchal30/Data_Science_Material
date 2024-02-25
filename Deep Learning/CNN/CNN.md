@@ -194,3 +194,15 @@ then trainable parameters are,
 
 = ((3 x 3 x 32) + 1) * 64
 = 18496
+
+
+## Normalisation in CNN (Local Response Normalisation):
+
+- In this wherever we have the highest pixel values, we pass some pixels values to the neighbour of that highest pixel.
+- So that the neighbours also have some information.
+- If we do this within channel then it is called as Intra-Channel.
+- If we do this accross channels then it is called as Inter-Channel.
+
+Refer to the below image.
+
+![alt text](image-20.png)
