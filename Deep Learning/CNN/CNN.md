@@ -173,3 +173,24 @@ exa:-
 - The receptive field of the first convolution layer is that the green box in 2nd layer is looking at the 3x3 pixels from the input image.
 - Similarly, the yellow box in the 2nd convolution layer is looking at the 3x3 pixels from the 1st convolution layer.
 - In simple terms the receptive field is the how much imformation that kernel can see? So we always look for global receptive field i.e. from 1x1 we should be able to see the entire image pixels so this type is called as Receptive Field.
+
+
+## Trainable parameters:
+
+kernel size = m x n x d
+here, m = heright, n = width, d = depth (channels from previous layers)
+
+Trainable parameters = ((m x n x d) + bias) * no of filters
+
+exa:- This is for 1st convolution layer. If we use input size = (28 x 28 x 1)
+and filters we use 32 of size (3 x 3)
+
+then trainable parameters = ((3 x 3 x 1) + 1) * 32
+= 320
+
+
+Now for 2nd layer, if we use 64 filters of same size (3 x 3) and d = 32 as the filters from previous layer are 32
+then trainable parameters are,
+
+= ((3 x 3 x 32) + 1) * 64
+= 18496
