@@ -104,5 +104,9 @@ As in 3*3 we use only 9 parameters and in 5*5 we use 25 parameters so more numbe
 Also if the output of 1st Conv layer with using 5*5 filter will be more than 2 Conv layers of 3*3 filter. So in 2 Conv layer we will be able to extract more features than in only 1 layer.
 
 
-## Inception (Google Net)
+## Why do we try to not use Fully-connected layers in CNN architecture?
+- So in any of the architecture we are already using multiple neural networks, and high number of filters. So the trainable parameters i.e. weights increases.
+- As number of parameter increases the training and computation cost increases.
+- In addition to that if we use FC layers, we are again increasing the computational cost, hence to avoid that we try to reduce FC layers instead by just convolutional operations it is better to bring down the image size to 1x1 and directly the output layer.
+
 
