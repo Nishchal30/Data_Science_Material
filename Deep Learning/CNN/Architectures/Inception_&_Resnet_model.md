@@ -2,7 +2,8 @@
 
 ![alt text](image-21.png)
 
-Here in inception, we have used so many new concepts like multiple softmax function, average pooling and max pooling both, \
+Inception contains 22 layers.
+Here in inception, we have used so many new concepts like multiple softmax function, average pooling and max pooling both, 
 
 
 ![alt text](image-22.png)
@@ -23,6 +24,18 @@ This layer consists of combination of all those layers (namely, 1×1 Convolution
 - First of all, we are performing aggregation operation at the end of all filters. Like we are using multiple filters of size 1x1, 3x3. 5x5 and maxpooling layer.
 - So after each operation, there might be some information loss but when we are aggregating in last, the amount of information again restored.
 - After concat the result is more or less same, like there will be no much information loss hence we have revived our original information and also extracted as much as information possible. 
+
+
+## Resnet proposed by Microsoft
+
+Resnet contains 152 layers which has best accuracy among all tries.
+
+![alt text](image.png)
+
+- Here we have 34 layered Resnet model.
+- Here they have used pure convolution operations only.
+- Stacked multiple convolutional layers with different filter sizes.
+- Here in between we can see dotted lines or /2 operation in convolutions, so that is used for dimensionality reduction using 1x1 filter and a Maxpool layer to reduce the size by half.
 
 
 
