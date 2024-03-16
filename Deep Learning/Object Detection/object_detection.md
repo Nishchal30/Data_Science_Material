@@ -3,6 +3,12 @@
 In object detection our aim is to define where the object is in the image.
 So where means we have to find out the location or co-ordinates of the object from that image.
 
+**Object Detection always comes with image classification and regression problems**
+like object = classification + regression
+
+- classification will tell us what type of object it is
+- Regression will tell us where the object is located in an image.
+
 So to find co-ordinates the axis is always +ve on both x & y sides
 Like the origin is top left corner of image, and down the line through y-axis is +ve y-axis and right side of origin is +ve x-axis.
 
@@ -36,3 +42,43 @@ Now we have the Ground truth points which are the actual co-ordinates of the bou
 - We will use here L2 Loss to check the accuracy of our predicted co-ordinates.
 - The difference  between ground truth and predicted co-ordinates should be minimum.
 - So the model should predict the co-ordinates in such as way that the loss value should be minimum
+
+
+## Metrics in Object Detection
+
+1) Intersection Over Union (IOU):
+The area of intersection between the two bounding boxes is called IOU
+
+The formula is given as,
+![alt text](image-1.png)
+
+0 < IOU > 1 ; 0 is worse and 1 is perfect.
+
+- If the IOU is 0, then it means the predicted boundix box is not overlapping with the Ground Truth i.e. actual bounding box of object
+- Hence the more IOU, the better object is detected.
+
+
+2) Confusion Matrix:
+
+**The confusion matrix in Object Detection**
+
+![alt text](image-2.png)
+
+So in object detection we uses classifiaction + regression, so classification score is given as confidence score. The higher the confidence score it means it is predicted what object it is in ground truth correctly.
+
+
+3) Average Precision:
+
+**Interpolation Method**
+
+In this we average precision value with either all points or through only specific number of points.
+
+![alt text](image-3.png)
+
+
+![alt text](image-4.png)
+
+
+
+
+
