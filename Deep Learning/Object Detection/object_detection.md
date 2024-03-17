@@ -76,7 +76,81 @@ In this we average precision value with either all points or through only specif
 ![alt text](image-3.png)
 
 
-![alt text](image-4.png)
+![alt text](image-4.png)    
+
+
+4) Mean Average Precision:
+
+Mean Average Precision (MAP) is basically the average of AP for all the output classes.
+for exa:  if we have 5 output classes for dog, cat, horse, zebra and giraffe then MAP will be the average of AP for all the 5 classes.
+
+
+## Sliding Window
+
+Sliding window is basically a window of some size x ,y and we will slide that window all over the image like we do convolution operation in CNN.
+So sliding window does not extract any features from particular window of the image, it actually scans the image to look for the object in image.
+
+**The problem in sliding window is the size of sliding window**
+
+Because if we set sliding window size small, then person may not fit in that window. And if the object is small and we set sliding window size high then it will capture lot of background along with the object.
+
+The sliding window will detect whether there is an object is not with the help of edge detection.
+Now we know if there is any object there will be lot of edges.
+
+
+## Sliding Window with Image Pyramid
+To overcome the above said issue, we rescale the image in different sizes, and then use the sliding window of fixed size over all the size of images.
+
+So from this we will be able to get the object. 
+
+![alt text](image-5.png)
+
+**Now the problem with this approach is we need to scan the entire image, when we don't need to also. We know that most of the times object lies at the centre of the image so we can use below two new techniques**
+
+
+## Edge Detection:
+1) Canny Edge Detection:
+
+![alt text](image-6.png)
+
+In the above image, we can clearly see that if there is an object then the edge detection will detect it with the edges, but it will be black and white and to detect what type of object it is we need to know the colors of object also.
+
+So for this we have another technique 
+
+## Selective Search
+
+This will group the similar colors pixels into groups to detect the object easily with colors.
+
+![alt text](image-7.png)
+
+In this above image all the pixels with similar colors are grouped togther we can detect that there are this objects in the image.
+
+**So now with the help of edge detection and color grouping we can decide where the object is located in the image.**
+
+- So whatever the objects are detected through this two techniques are not the final objects, they are object are not will be confirmed by the model training. 
+- But this techniqes helps us to atleast propose that there might be an object so it is called as **Region Proposal.**
+
+- Now this Region Proposals are then sent to the model like VGG, Resnet.
+
+- But there is one problem, we cannot pass directly the Region Proposals to the model, as every model has their input size constraint. so we need to first resize our Region Proposals to the input size that the model accepts. This resize operation is called as **Wrap Operation.**
+
+**Now again after wrap operation there are many problems, blur image can come, image distortion can happen.**
+
+
+
+## RCNN (Regiona based Convolutional Neural Network)
+
+![alt text](image-8.png)
+
+- In RCNN, as the above image tells us that, they have extracted 2k regional proposals from the input image using edge detection and selective search algorithms.
+- and performed the wrap operation on the region proposals and then passed to CNN models.
+- Then classifies the class of object
+
+
+
+
+
+
 
 
 
