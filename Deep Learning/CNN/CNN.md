@@ -144,6 +144,16 @@ Then we will apply a max-pooling of 2*2 so the output matrix will become 12*12*n
 Then again we will apply convolution layer on top of this output and again we will apply max-pooling layer.
 
 
+## Max-Pooling in odd number of image size
+
+Let's take an example of 7x7 image, and we want to apply max-pooling on this, how to do it?
+
+So whenever we have odd number of pixels size we divide them as left side should be smaller than right side.
+like in 7x7, we will divide the image from 3x4
+
+
+
+
 ## Flattening:
 
 The flatten layer lies between the CNN and the ANN, and its job is to convert the output of the CNN into an input that the ANN can process, as we can see in the above diagram.

@@ -119,7 +119,7 @@ So for this we have another technique
 
 ## Selective Search
 
-This will group the similar colors pixels into groups to detect the object easily with colors.
+This will group the similar colors, composition and texture pixels into groups to detect the object easily with colors.
 
 ![alt text](image-7.png)
 
@@ -134,17 +134,11 @@ In this above image all the pixels with similar colors are grouped togther we ca
 
 - But there is one problem, we cannot pass directly the Region Proposals to the model, as every model has their input size constraint. so we need to first resize our Region Proposals to the input size that the model accepts. This resize operation is called as **Wrap Operation.**
 
-**Now again after wrap operation there are many problems, blur image can come, image distortion can happen.**
+**Now again after wrap operation there are many problems, blur image can come, image distortion can happen this called as aspect ratio problem.**
 
 
 
-## RCNN (Regiona based Convolutional Neural Network)
 
-![alt text](image-8.png)
-
-- In RCNN, as the above image tells us that, they have extracted 2k regional proposals from the input image using edge detection and selective search algorithms.
-- and performed the wrap operation on the region proposals and then passed to CNN models.
-- Then classifies the class of object
 
 
 
