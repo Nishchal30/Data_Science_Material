@@ -44,10 +44,39 @@ In Fast-RCNN we follows the below steps:
 
 - Now in RCNN they have used 3 stage training, in Fast-RCNN they have used 2 stage training.
 - 1) Fine tune using log loss + softmax activation for classification
-- 2) Boundig box regresor. 
+- 2) Boundig box regressor to give the bounding box co-ordinates. 
 
 ![alt text](image-13.png)
 
+**Disadvantages of Fast-RCNN**
+1) Fast-RCNN is also slow as it extracts features from each image, and also find the region proposals from each image.
+2) So this is also a time consuming algorithm.
 
+
+
+## **Faster RCNN**
+In Faster RCNN, they have replaced the traditional image processing algorithms to detect region proposals which are edge detection and selective search, with the Region Proposal Network (RPN).
+
+![alt text](image-14.png)
+
+- In the above image, we can see there is a layer called Region Proposal Network (RPN). So instead of using Selective search and edge detection they have used a deep learning network called RPN.
+- They have used either Alexnet/VGG model and predicted two things:
+- a) Bounding box co-ordinates
+- b) Background (there is no object) / Foreground (there is object).
+
+
+- So here we are able to get the predictions of object and bounding box two times, as RPN first does it, and then after ROI, the model itself again does this.
+- Hence the network gets improved.
+
+
+**Training of Faster-RCNN**
+
+Here ConvNet1 means the Convolutional architecture used in RPN
+COnvNet2 means the Convolutional architecture used in Fast-RCNN model.
+
+- 1) Train the RPN using ConvNet1
+- 2) Train Fast-RCNN using ConvNet2, now in this the already trained RPN output i.e Region proposals will also come so the Fast-RCNN will train easily.
+- 3) Fine Tune RPN using ConvNet2 to get better region proposals. This is important as we first train RPN on imagenet weights and in back-propogation we want to train this with out custom weights.
+- 4) Fine Tune Fast-RCNN using ConvNet2 and new proposals.
 
 
