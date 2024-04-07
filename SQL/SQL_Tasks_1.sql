@@ -27,3 +27,17 @@ SELECT * FROM USA_data WHERE COUNTRYCODE = 'JPN';
 -- 6  Query the names of all the Japanese cities in the CITY table. The COUNTRYCODE for Japan is JPN.
 SELECT NAME FROM USA_data WHERE COUNTRYCODE = 'JPN';
 
+
+-- Query to find median of a column
+with cte as
+(select lat_n, 
+row_number() over (order by lat_n desc) as row_num,
+count(*) over () as total_rows
+from station)
+
+select round(lat_n, 4) from cte
+where 
+row_num = case
+            when total_rows % 2 > 0 then (total_rows+1)/2
+            when total_rows % 2 = 0 then ((total_rows/2) + (total_rows+1)/2)/2
+          end
