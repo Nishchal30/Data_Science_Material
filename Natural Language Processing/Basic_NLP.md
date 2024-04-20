@@ -80,20 +80,3 @@ Disadvantage:
 4) Words :- Each and every word in the corpus.
 
 
-## One Hot Encoding
-
-Let's understand with the example
-
-![alt text](image.png)
-
-The one hot encoding is given in the above image for each words, we just put 1 whereever the word is present in the sentence.
-
-**Advantage of One hot encoding**
-1) Easy to implement and understand
-
-**Disadvantage of One hot encoding**
-1) Create a sparse matrix which means 1 0 matrix with huge size.
-2) Out of Vocabulary means out input to the model should be of fixed size.
-exa if we have 3 sentences with different no of words, then the one hot encoding also will be different sizes.
-Hence the sentence size should be fixed.
-3) Semantic meaning between words is not captured, like the meaning of sentences is not maintained.
