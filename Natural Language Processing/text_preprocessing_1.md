@@ -130,6 +130,15 @@ TF x IDF we will get,
 - Bat, Krish, Cat are the rare words hence they are given higher weightage.
 
 
+**Advantage of TF-IDF**
+1) Intutive
+2) Word importance is getting captured
+
+
+**Disadvantage of TF-IDF**
+1) Sparce matrix issue is still there.
+2) Out of vocabulary issue is not handled.
+
 
 
 
