@@ -58,6 +58,7 @@ The above data will be our ready to pass data to our model using bag of words.
 2) Out of vocabulary (if any word that is not there in training will be discarded)
 3) Ordering of words has changed.       
 4) Not able to capture semantic meaning.
+(Semantic meaning means the similar meaning words like good, better these are semantic words.)
 
 
 ## N-Grams
