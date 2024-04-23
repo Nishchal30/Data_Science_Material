@@ -6,3 +6,16 @@
 - Machine Learning algorithms like Logistic regression, Decision Tree, Random Forest, XGBoost etc.
 - Exploratory Data Analysis & Feature Engineering.
 - Deep Learning algorithms
+
+
+## Statistics Interview Question
+**1) What can we do to convert pareto distribution to Normal Distribution and how pareto distribution looks like?**
+Answer:
+BoxCox transformation is applied to it.
+
+
+**2) What technique is used to check wether our data follows the normal distribution or not?**
+Answer:
+
+Q-Q Plot technique is used.
+

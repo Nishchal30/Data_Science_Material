@@ -95,3 +95,23 @@ and whatever the input features in CBOW that becomes output features in Skip gra
 
 All other ANN training is similar as CBOW.
 
+
+
+## AvgWord2Vec
+
+In word2Vec, if we use pre-trained model like google-news-300,
+then every word in sentence gets converted into vector of 300 dimension.
+
+So each and every word for each and every sentence in the corpus will get converted into 300 dimension vector.
+Hence we will get very huge dimension vector for corpus at the end.
+
+for exa:-
+**I eat food**
+- Now in the above example using pre-trained google-news-300 model, each word will converted into 300 dimension vector.
+- So for one sentence of 3 word, the dimension becomes 900, which is very huge.
+- To overcome this issue, we can use AvgWord2Vec.
+
+- In AvgWord2Vec we take the average of vectors for each word for each and every sentence.
+- If we consider the same above example, for the whole sentence it will take avg of each word matirx and create once matrix of 300 dimension.
+- Hence it will not create very huge dimension matrix instead it will just create sentence wise one matrix of 300 dimension.
+- So our model training will be easy and computational light compared to Word2Vec.
