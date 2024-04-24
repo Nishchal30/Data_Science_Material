@@ -102,7 +102,6 @@ Let's see forward propogation of RNN in Many to One RNN.
 
 
 
-## Long Short Term Memory (LSTM) RNN
 
 
 
