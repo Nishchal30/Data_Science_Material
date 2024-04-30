@@ -1,7 +1,7 @@
 ## Hirarchical Clustering
 
 As the name suggests, we create a hirarchy of clusters in this algorithm.
-Hirarchy if clusters means the various levels of clusters like we use top down approach in filters.
+Hirarchy of clusters means the various levels of clusters like we use top down approach in filters.
 
 exa:- 
 Let's take an example of a college, the college is one cluster.
