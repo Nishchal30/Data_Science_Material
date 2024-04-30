@@ -28,7 +28,7 @@ The 3rd data point is (183, 71)
 d(c1, 3rd point) = 3.16
 d(c2, 3rd point) = 7.07
 
-Now the distance of 3rd data point & centroid 1 is less than ccentroid 2.
+Now the distance of 3rd data point & centroid 1 is less than distance between 3rd point & centroid 2.
 hence we will consider 3rd point belong to centroid 1.
 
 From whichever centroid the distance is less to the data point, that data point will belong to that centroid/cluster.
