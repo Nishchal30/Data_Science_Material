@@ -17,7 +17,7 @@ Hence,
 
 **If R - square = 0.85 we can say that the model is 85% accurate.**
 
-If the case is reversed like if the numerator term is smaller than the denominator then 
+If the case is reversed like if the numerator term is greater than the denominator then 
 
 R - square = 1 - higher value
 R - square = -ve value
