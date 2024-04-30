@@ -11,10 +11,10 @@ The one hot encoding is given in the above image for each words, we just put 1 w
 
 **Disadvantage of One hot encoding**
 1) Create a sparse matrix which means 1 0 matrix with huge size.
-2) Out of Vocabulary means out input to the model should be of fixed size.
-exa if we have 3 sentences with different no of words, then the one hot encoding also will be different sizes.
+2) Out of Vocabulary means (if any word that is not there in training will be discarded)
 Hence the sentence size should be fixed.
-3) Semantic meaning between words is not captured, like the meaning of sentences is not maintained.
+3) Semantic meaning between words is not captured, (Semantic meaning means the similar meaning words like good, better these are semantic words.)
+
 
 
 ## Bag of Words (BOW):
