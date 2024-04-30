@@ -36,7 +36,7 @@ This is a black and white image so the matrix values ranges from (0, 255)
 Now as shown in the above image, we apply filter on top of the original matrix. Multiply the same values and add all the values.
 
 like for first 3 rows and first 3 columns.
-value = 10*1 + 10*0 + 10*-1 + 10*1 + 10*0 + 10*-1 + 10*1 + 10*0 + 10*-1
+value = 10x1 + 10x0 + 10x-1 + 10x1 + 10x0 + 10x-1 + 10x1 + 10x0 + 10x-1
 value = 0
 
 so this 0 will be placed at first place in new matrix
