@@ -45,7 +45,7 @@ After finding the first place of new matrix we will shift the filter one step ri
 
 Now like this we will fill all the boxes of new matrix.
 
-Now here in the above image the input matrix is 6*6, filter is 3*3 but output matrix is 4*4.
+Now here in the above image the input matrix is 6x6, filter is 3x3 but output matrix is 4x4.
 
 The formula for output matrix is,
 
