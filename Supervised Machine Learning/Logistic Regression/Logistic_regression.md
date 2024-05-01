@@ -95,3 +95,78 @@ and then we will minimize the value of this cost function by changing the coeffi
 }  for j = 0 & 1
 
 
+## **Logistic Regression using Multiclass classification**
+
+To perform this we need to split multi-class classification problem into multiple binary classification datasets and train a binary classification model each.
+
+There are below two methods to perform this task
+1) One vs Rest 
+2) One vs One
+
+1) One vs Rest:
+For example, given a multi-class classification problem with examples for each class ‘red,’ ‘blue,’ and ‘green‘. This could be divided into three binary classification datasets as follows:
+
+- Binary Classification Problem 1: red vs [blue, green]
+- Binary Classification Problem 2: blue vs [red, green]
+- Binary Classification Problem 3: green vs [red, blue]
+
+
+**Python Implementation**
+LogisticRegression(multi_class='ovr')
+Also we have OneVsRestClassifier class in python for this.
+
+
+2) One vs One:
+Like one-vs-rest, one-vs-one splits a multi-class classification dataset into binary classification problems. Unlike one-vs-rest that splits it into one binary dataset for each class, the one-vs-one approach splits the dataset into one dataset for each class versus every other class.
+
+For example, consider a multi-class classification problem with four classes: ‘red,’ ‘blue,’ and ‘green,’ ‘yellow.’ This could be divided into six binary classification datasets as follows:
+
+- Binary Classification Problem 1: red vs. blue
+- Binary Classification Problem 2: red vs. green
+- Binary Classification Problem 3: red vs. yellow
+- Binary Classification Problem 4: blue vs. green
+- Binary Classification Problem 5: blue vs. yellow
+- Binary Classification Problem 6: green vs. yellow
+
+The formula for calculating the number of binary datasets, and in turn, models, is as follows:
+
+(NumClasses * (NumClasses – 1)) / 2
+We can see that for four classes, this gives us the expected value of six binary classification problems:
+
+- (NumClasses * (NumClasses – 1)) / 2
+- (4 * (4 – 1)) / 2
+- (4 * 3) / 2
+- 12 / 2
+- 6
+
+
+**Python Implementation**
+SVC(decision_function_shape='ovo')
+
+model = SVC()
+# define ovo strategy
+ovo = OneVsOneClassifier(model)
+
+## **Interview Question**
+
+1) Can logsitic regression is used for multiclass classification problem, if yes how?
+Ans - The answer is yes, we can perform logistic regression o multiclass target variable, but then it is called as Multiomial Logistic Regression.
+
+To perform this we need to split multi-class classification problem into multiple binary classification datasets and train a binary classification model each.
+
+There are below two methods to perform this task
+1) One vs Rest 
+2) One vs One
+
+
+2) What is the major difference between logistic regression and SVC?
+Ans - Both are designed to perform Binary classification problem by default, but we can perform multinomial classification problem by tweaking the algorithms.
+
+- Logistics is a linear model, which helps to classify the target class based on sigmoid function with linear dependent features.
+- SVC is a non-linear model that finds the hyperplane to seperate the classes.
+- Logistic is simple and easy to interpret, it works well when there is linear relationship between independent and dependent features.
+- SVC when we use non-linear kernels, can be complex to interpret.
+
+
+
+
