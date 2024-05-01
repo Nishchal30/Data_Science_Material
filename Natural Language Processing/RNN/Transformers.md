@@ -102,8 +102,68 @@ As given in below image.
 
 
 
+## **Different types of transformer architectures**
+1) Encoder only
+2) Decoder Only
+3) Encoder-Decoder
+
+**1) Encoder Only:**
+There are many Encoder only models, we will see each of them as below
+
+1) BERT
+- First encoder only model is BERT based on transformer architecture.
+- BERT is used in use cases like Text classification, NER(Named Entity Recognition)
+- BERT is (Bidirectional Encoder Represntations from Transformers)
+- BERT is trained on Masked Language Modelling (MLM) and Next Sentence Prediction (NSP)
+
+2) DistilBERT:
+- DistilBERT is lightweight model of BERT.
+- It's less memory consuming yet fast performing model.
+
+3) RoBERTa
+- Robustly Optimized BERT Pre-training Approach.
+- This is trained on longer sentences than BERT and on more data.
+- It drops the NSP training objective of BERT.
+
+4) XLM
+- Improved version of BERT
+- XLM is widely used for cross-lingual language tasks, like text classification and machine translation.
+- XLM is trained on Translation Language Modelling (TLM) which is an extended version of Masked Language Modelling (MLM).
+
+5) XLM-R (combination of XLM, and RoBERTa)
+6) ALBERT
+7) ELECTRA
+8) DeBERTa
 
 
 
+**2) Decoder Only:**
+There are many Decoder only models, we will see each of them as below
+Decoder models are mostly used for text generation tasks, which is mainly used by OpenAI.
+
+1) GPT (Generative Pre-trained Transformers)
+- GPT is trained for predicting the next word based on the previous words.
+
+2) CTRL (Conditonal Transformer Language)
+- GPT is used to autocomplete an input sentence, but the user has no control on the format of generated sentences.
+- CTRL solves this issue by introducing "control tokens" at the begining of sequence.
+
+3) GPT-2 (Successor of GPT)
+- GPT-2 can produce long sequences and also trained on more data than GPT.
+
+4) GPT-3 (Successor of GPT-2)
+-  GPT3 is much more refined version of GPT-2 as it is trained on more data, and the accuracy also increased.
 
 
+
+**3) Encoder-Decoder models**
+
+1) T5 (Text-to-text transfer Transformer)
+- The T5 combined the NLU (Natural Language Understanding) and NLG (Natural Language Generation) tasks.
+
+2) BART (Bidirectional Auto-regressive Transformers)
+
+3) M2M 100 
+- M2M 100 is the first model which is capable for converting the text into 100 languages, while other model supports only one language translatation.
+
+4) BigBird
