@@ -168,5 +168,13 @@ Ans - Both are designed to perform Binary classification problem by default, but
 - SVC when we use non-linear kernels, can be complex to interpret.
 
 
+3) Why logistics regression is called as regression and not classification even if it is a classification algoritm?
+
+ans:
+- So it is not an independenly a classification algorithm, it is based on linear regression itself.
+- But we apply sigmoid function on top of it which converts the values in probabilities.
+- Hence it is a classification algorithm, but the output we get is 0 & 1 which is a regression numbers so it is called as regression in name.
+
+
 
 
