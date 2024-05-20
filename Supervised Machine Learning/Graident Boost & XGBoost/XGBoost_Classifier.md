@@ -58,6 +58,19 @@ o/p = sigmoid(base learner + alpha1(DT1) + alpha2(DT2) + ....+ alphan(DTn))
 
 
 
+## Interview Question
+
+**What is the difference between XGBoost and Gradient Boost?**
+Ans - 
+1) Gradient boost trains the model squentially, by training weak learners to become strong learner.
+2) It tries to reduce loss function at each and every iteration.
+3) XGboost also does the same things but some extra things are added in this like, Regularization, Parallelaziation, Missing Data Handeling, Tree Pruning, In built cross validation to improve the performance and speed of model training.
+4) In Regularization, it used L1 (Lasso) or L2(Ridge) Regularization.
+5) The boosting technique might be sequential, but parallelization could still be done within the XGBoost process. The parallelization aims to speed up the tree-building process, mainly during the splitting event.
+6) XGBoost has its own in-built missing data handler, whereas GBM doesn’t.
+7) XGBoost has an in-built Cross-Validation that could be used during the training session, GBM doesn't.
+
+
 
 
 
