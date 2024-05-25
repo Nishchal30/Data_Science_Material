@@ -107,8 +107,8 @@ Skewed distribution:- When the curve of the distribution tends to only on one si
 
 **The relationship between mean, mode and median between Right skewed and Left skewed distributions**
 
-For right skewed distribution :- mean < median < mode
-For left skewed distribution :- median < mean < mode
+For right skewed distribution :- mean > median > mode
+For left skewed distribution :- mean < median < mode
 
 
 ## Log Normal Distribution
