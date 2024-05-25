@@ -98,9 +98,10 @@ exa:- In CNN image processing, we need to normalize the pixel values.
 Skewed distribution:- When the curve of the distribution tends to only on one size but some data points lies on the other side.
 
 1) Right skewed distribution:- The curve will be on left side of x-axis and the curve is elongated towards right side of x-axis.
-exa:- Wealth distribution, Life expectancy
+exa:- Wealth distribution
 
 2) Left skewed distribution:- The curve will be on right side of x-axis and the curve is elongated towards left side of x-axis or at the start of axis.
+exa:-  Life expectancy
 
 **The relationship between mean, mode and median between Right skewed and Left skewed distributions**
 
