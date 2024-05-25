@@ -74,7 +74,7 @@ Precision = TP / (TP + FP)
 Predicted
 Value (y^)
 
-**So this tells us Out of all actual values how many are predicted correctly.**
+**Precision tells us how many of the correctly predicted cases actually turned out to be positive.**
 
 Practical example:
 If we have to classifiy whether the email is Spam or Ham
@@ -90,7 +90,7 @@ So we should always focus on reducing FP**
 
 Recall  = TP / (TP + FN)
 
-**Out of all the predicted values how many are correctly predicted**
+**Recall tells us how many of the actual positive cases we were able to predict correctly with our model.**
 
 **Whenever we have to reduce FN then we can use Recall**
 
