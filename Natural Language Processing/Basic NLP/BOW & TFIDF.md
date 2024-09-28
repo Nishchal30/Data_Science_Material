@@ -10,7 +10,7 @@ The one hot encoding is given in the above image for each words, we just put 1 w
 1) Easy to implement and understand
 
 **Disadvantage of One hot encoding**
-1) Create a sparse matrix which means 1 0 matrix with huge size.
+1) Create a sparse matrix which means 1 0 matrix with huge size, this leads to overfitting.
 2) Out of Vocabulary means (if any word that is not there in training will be discarded)
 Hence the sentence size should be fixed.
 3) Semantic meaning between words is not captured, (Semantic meaning means the similar meaning words like good, better these are semantic words.)
@@ -80,6 +80,24 @@ Ans:-
 1) I, am, not
 2) am, not, feeling
 3) not feeling well
+
+
+**Why we use n-grams?**
+If we have two sentences like:
+1) The food is good
+2) The food is not good
+
+Now after removing stopwords, and lowering the words, we will get the vocabulary of words as:
+
+**vocab = [food, not, good]**
+
+and if we apply BOW on this sentences, we will get that two sentences are almost similar but in meaning they are completely opposite, that's why we need to use combination of words, hence we use n-grams.
+
+So after applying bigrams to above sentences we will our vocabulary as:
+
+**vocab = [food, not, good, food good, food not, not good]**
+
+Now if we apply BOW on these vocab, we will not get the most similar vectors for the above two sentences. so that it will not say the two sentences are similar.
 
 
 

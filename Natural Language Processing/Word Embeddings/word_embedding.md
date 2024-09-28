@@ -95,7 +95,8 @@ and whatever the input features in CBOW that becomes output features in Skip gra
 
 All other ANN training is similar as CBOW.
 
-
+**When we have small dataset, then we can use CBOW**
+**and when we have large dataset, then we can use skipgrams**
 
 ## AvgWord2Vec
 
