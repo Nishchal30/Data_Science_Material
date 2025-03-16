@@ -81,6 +81,29 @@ Nishchal likes pizza but his friend likes burger.
 - We do the dot product of this two vectors and will get an output vector.
 
 
+# **GRU (Gated Recurrent Unit)**
+
+**Why do we need GRU?**
+The answer to this is, we have two memory cells i.e. Long term and short term in LSTM. So it will require more trainable paramaters and more training time and hardware as it is a complex architecture.
+
+Hence in GRU it is resolved and there is only one memory cell.
+
+![alt text](image-14.png)
+
+As here is only one cell, which is both Long and short term memory cell.
+
+![alt text](image-24.png)
+
+- As there are three gates in LSTM (Input, forget, output) there are different gates in GRU
+1) (zt) Update Gate:- The value from memory cell, and input will be multiplied with weight and then sigmoid is applied to that.
+2) (rt) Reset Gate:- This is also same as Update gate (multiply input and memory cell value with weight and apply sigmoid).
+3) (~ht) Candidate memory gate:- This is weights multiplied with output of Reset gate with input & memory cell value and apply Tanh activation function.
+4) (ht) Output gate:- There are point wise operation between Update gate and Candidate memory gate.
+
+**Importance of these gates**
+1) Reset Gate:- Reset some information from (ht - 1) i.e. memory cell (both long term and short term)
+2) Update Gate:- what context information needs to be included for output this depends on the current context coming from Candidate memory gate.
+
 
 
 
