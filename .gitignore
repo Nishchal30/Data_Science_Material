@@ -49,6 +49,7 @@ htmlcov/
 .cache
 *.pdf
 *.txt
+*.docx
 Test/
 nosetests.xml
 coverage.xml
